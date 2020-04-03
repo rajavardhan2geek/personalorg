@@ -1,0 +1,16 @@
+<template>
+
+        <lightning-combobox
+            name="measurementunits"
+            label="Enter Measurement Type"
+            value={measuredunittype}
+            placeholder="Select measurement type"
+            options={measuredunits}
+            onchange={onChgUnitType}
+            required
+    ></lightning-combobox>
+    
+    <lightning-input type="number"  label={areainputstr} name="MeasuredUnit"  onchange={onConversion} value={measuredunit}></lightning-input>
+    
+    <lightning-formatted-text value={convertedtext} ></lightning-formatted-text></p>
+</template>
